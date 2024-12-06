@@ -1,68 +1,77 @@
 .root {
-    -fx-background-color: #f0f0f0;
+    -fx-background-color: #121212;
     -fx-font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.label {
+.sidebar {
+    -fx-background-color: #000000;
+    -fx-min-width: 250px;
+}
+
+.main-content {
+    -fx-background-color: #121212;
+}
+
+.app-title {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
-    -fx-text-fill: #2c3e50;
+    -fx-text-fill: #1DB954;
 }
 
-.category-label {
-    -fx-font-size: 18px;
+.section-title {
+    -fx-font-size: 28px;
     -fx-font-weight: bold;
-    -fx-text-fill: #34495e;
+    -fx-text-fill: #FFFFFF;
 }
 
-.text-field {
-    -fx-background-color: white;
-    -fx-background-radius: 5;
-    -fx-border-color: #bdc3c7;
-    -fx-border-radius: 5;
-    -fx-padding: 5;
+.search-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-padding: 8 12;
     -fx-font-size: 14px;
 }
 
-.button {
-    -fx-background-color: #3498db;
-    -fx-text-fill: white;
+.search-button {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: #FFFFFF;
     -fx-font-size: 14px;
+    -fx-font-weight: bold;
     -fx-padding: 8 16;
-    -fx-background-radius: 5;
+    -fx-background-radius: 20;
 }
 
-.button:hover {
-    -fx-background-color: #2980b9;
+.search-button:hover {
+    -fx-background-color: #1ED760;
 }
 
-.list-view {
-    -fx-background-color: white;
-    -fx-background-radius: 5;
-    -fx-border-color: #bdc3c7;
-    -fx-border-radius: 5;
+.songs-list {
+    -fx-background-color: #121212;
 }
 
-.list-cell {
-    -fx-padding: 10 5;
-    -fx-background-color: transparent;
+.songs-list .list-cell {
+    -fx-background-color: #121212;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-padding: 10 5 10 5;
 }
 
-.list-cell:filled:selected, .list-cell:filled:selected:hover {
-    -fx-background-color: #3498db;
-    -fx-text-fill: white;
+.songs-list .list-cell:filled:hover {
+    -fx-background-color: #282828;
 }
 
-.list-cell:filled:hover {
-    -fx-background-color: #ecf0f1;
+.songs-list .list-cell:filled:selected {
+    -fx-background-color: #333333;
 }
 
 .scroll-bar:vertical {
-    -fx-background-color: transparent;
+    -fx-background-color: #121212;
 }
 
 .scroll-bar:vertical .thumb {
-    -fx-background-color: #bdc3c7;
-    -fx-background-radius: 5;
+    -fx-background-color: #535353;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #636363;
 }
 

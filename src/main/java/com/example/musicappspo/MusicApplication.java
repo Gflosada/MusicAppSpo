@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class MusicApplication extends Application {
@@ -12,10 +13,16 @@ public class MusicApplication extends Application {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(MusicApplication.class.getResource("hello-view.fxml"));
         Parent root = fxmlLoader.load();
-        primaryStage.setTitle("Music Search App");
-        primaryStage.setScene(new Scene(root, 600, 600));
-        primaryStage.setMinWidth(600);
-        primaryStage.setMinHeight(600);
+        primaryStage.setTitle("Music App");
+
+        // Set the application icon
+        Image appIcon = new Image(MusicApplication.class.getResourceAsStream("iconex.png"));
+        primaryStage.getIcons().add(appIcon);
+
+        Scene scene = new Scene(root, 900, 600);
+        primaryStage.setScene(scene);
+        primaryStage.setMinWidth(800);
+        primaryStage.setMinHeight(500);
         primaryStage.show();
     }
 
@@ -23,4 +30,3 @@ public class MusicApplication extends Application {
         launch(args);
     }
 }
-
